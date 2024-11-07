@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+.bt{
+    background-color: rgb(237, 213, 59);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    color: azure;
+}
+.btRemover{
+    background-color: rgb(237, 59, 59);
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    margin-left: 10px;
+    color: azure;
+}
+.list {
+    display: flex;
+    background-color: rgb(213, 221, 230);
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgb(142, 157, 157);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
