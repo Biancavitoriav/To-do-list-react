@@ -13,7 +13,7 @@ function Todoform({ addTask }) {
     };
 
     return (
-        <div>
+        <div className={styles.flexContainer}>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"

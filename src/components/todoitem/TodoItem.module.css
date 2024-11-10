@@ -2,36 +2,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 235, 235);
 }
 .bt{
-    background-color: rgb(237, 213, 59);
-    border-radius: 10px;
+    background-color: rgb(232, 220, 142);
+    border-radius: 6px;
+    border: none;
     padding: 5px;
     margin-left: 10px;
-    color: azure;
+    color: rgb(94, 110, 41);
 }
 .btRemover{
-    background-color: rgb(237, 59, 59);
+    background-color: rgb(203, 152, 152);
     border: none;
     border-radius: 6px;
     padding: 5px;
     margin-left: 10px;
     color: azure;
+    color: rgb(105, 30, 30);
+
 }
 .list {
     display: flex;
-    background-color: rgb(213, 221, 230);
     height: 50px;
     border-radius: 6px;
-    border: 1px solid rgb(142, 157, 157);
+    border: 1px solid rgb(91, 191, 191);
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     padding: 10px;
-}
-.flexContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

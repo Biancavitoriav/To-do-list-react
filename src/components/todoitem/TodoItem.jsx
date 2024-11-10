@@ -16,13 +16,12 @@ function TodoItem({ task, editTask, toggleComplete, removeTask }) {
 
     return (
         <li className={styles.list} key={task.id}>
-            {/* Condição para verificar se está em edição */}
+            {}
             {isEditing ? (
                 <>
                     <input
                         type="text"
                         value={newText}
-                        // Atualiza o valor do input
                         onChange={(e) => setNewText(e.target.value)}
                         className={styles.input}
                     />
@@ -45,13 +44,14 @@ function TodoItem({ task, editTask, toggleComplete, removeTask }) {
                     </span>
                     <button
                         onClick={handleEdit}
-                        className={styles.editButton}
+                        className={styles.bt}
+
                     >
                         Editar
                     </button>
                     <button
                         onClick={() => removeTask(task.id)}
-                        className={styles.removeButton}
+                        className={styles.btRemover}
                     >
                         Remover
                     </button>
