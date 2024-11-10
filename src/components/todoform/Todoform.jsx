@@ -1,38 +1,32 @@
 import { useState } from "react";
 import styles from "./Todoform.module.css";
 
-function Todoform({ adicionarTarefa }) {
-    const [pessoa, setPessoa] = useState("");
+function Todoform({ addTask }) {
+    const [inputValue, setInputValue] = useState("");
 
-    const handleInputChange = (e) => {
-        setPessoa(e.target.value);
-    };
-
-    const handleAddClick = () => {
-        if (pessoa.trim()) {
-            adicionarTarefa(pessoa); 
-            setPessoa("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (inputValue.trim()) {
+            addTask(inputValue);
+            setInputValue("");
         }
     };
 
     return (
-        <ol>
-            <li>
-                <div>
-                    <input
-                        type="text"
-                        value={pessoa}
-                        onChange={handleInputChange}
-                    />
-                    <input
-                        className={styles.button}
-                        type="button"
-                        value="Adicionar"
-                        onClick={handleAddClick} 
-                    />
-                </div>
-            </li>
-        </ol>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                />
+                <input
+                    className={styles.button}
+                    type="submit"
+                    value="Adicionar"
+                />
+            </form>
+        </div>
     );
 }
 
