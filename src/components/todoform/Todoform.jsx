@@ -19,6 +19,7 @@ function Todoform({ addTask }) {
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
+                    className={styles.input}
                 />
                 <input
                     className={styles.button}

@@ -6,3 +6,10 @@
     margin-left: 10px;
     color: azure;
 }
+.input{
+    padding: 5px;
+    margin: 8px;
+    border-radius: 6px;
+
+    border: 2px solid rgb(95, 184, 199); 
+}
